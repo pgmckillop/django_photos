@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% extends 'pages/layout.html' %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,19 @@
 <body>
     {%  block content %}
         <br/>
+        <img src="{% static 'images/website02.png' %}">
+        <br/>
         <h1>This is the INDEX page</h1>
+    <br/>
+
+    <div class="card" style="width: 18rem;">
+    <img src="{% static 'images/website01.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Learn to code</h5>
+        <p class="card-text">W3 schools has a great set of instructional material to help you learn.</p>
+        <a href="https://www.w3schools.com/" target="blank" class="btn btn-primary">W3 Schools</a>
+    </div>
+</div>
     {% endblock %}
 </body>
 </html>

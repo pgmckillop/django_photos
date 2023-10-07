@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 {% extends 'pages/layout.html' %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}About{% endblock %}</title>
 </head>
 <body>
-    {%  block content %}
+{%  block content %}
+<br/>
+    <img src="{% static 'images/website03.jpg' %}" alt="Third Image">
+    <br/>
         <br/>
         <h1>This is the About page</h1>
     {% endblock %}
